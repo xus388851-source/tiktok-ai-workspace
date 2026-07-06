@@ -21,5 +21,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run AI pipeline
-        run: python run.py
+- name: Run AI pipeline
+  run: |
+    python -c "import sys; print(sys.path)"
+    python main.py
